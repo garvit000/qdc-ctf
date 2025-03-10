@@ -1,1 +1,25 @@
 /*Damn u must be smart, here's your reward 4354467B7468655F626573745F646564756365727D */
+button {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button::before {
+    content: "Wait, what’s this?";
+    font-size: 12px;
+    color: black;
+}
+
+@keyframes blink {
+    0% {opacity: 1;}
+    50% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+button:hover {
+    animation: blink 1s infinite;
+}
